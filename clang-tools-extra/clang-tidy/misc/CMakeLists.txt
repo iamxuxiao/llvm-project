@@ -31,10 +31,14 @@ add_clang_library(clangTidyMiscModule
   ConstCorrectnessCheck.cpp
   DefinitionsInHeadersCheck.cpp
   ConfusableIdentifierCheck.cpp
+  FilterCheckCheck.cpp
   MiscTidyModule.cpp
   MisleadingBidirectional.cpp
   MisleadingIdentifier.cpp
   MisplacedConstCheck.cpp
+  MyClassCheckCheck.cpp
+  MyFirstCheckCheck.cpp
+  MyReturnCheckCheck.cpp
   NewDeleteOverloadsCheck.cpp
   NoRecursionCheck.cpp
   NonCopyableObjects.cpp
@@ -47,6 +51,7 @@ add_clang_library(clangTidyMiscModule
   UnusedAliasDeclsCheck.cpp
   UnusedParametersCheck.cpp
   UnusedUsingDeclsCheck.cpp
+  VirtualShadowingCheck.cpp
 
   LINK_LIBS
   clangAnalysis

@@ -242,9 +242,13 @@ Clang-Tidy Checks
    `misc-confusable-identifiers <misc/confusable-identifiers.html>`_,
    `misc-const-correctness <misc/const-correctness.html>`_, "Yes"
    `misc-definitions-in-headers <misc/definitions-in-headers.html>`_, "Yes"
+   `misc-filter-check <misc/filter-check.html>`_, "Yes"
    `misc-misleading-bidirectional <misc/misleading-bidirectional.html>`_,
    `misc-misleading-identifier <misc/misleading-identifier.html>`_,
    `misc-misplaced-const <misc/misplaced-const.html>`_,
+   `misc-my-class-check <misc/my-class-check.html>`_,
+   `misc-my-first-check <misc/my-first-check.html>`_,
+   `misc-my-return-check <misc/my-return-check.html>`_,
    `misc-new-delete-overloads <misc/new-delete-overloads.html>`_,
    `misc-no-recursion <misc/no-recursion.html>`_,
    `misc-non-copyable-objects <misc/non-copyable-objects.html>`_,
@@ -257,6 +261,7 @@ Clang-Tidy Checks
    `misc-unused-alias-decls <misc/unused-alias-decls.html>`_, "Yes"
    `misc-unused-parameters <misc/unused-parameters.html>`_, "Yes"
    `misc-unused-using-decls <misc/unused-using-decls.html>`_, "Yes"
+   `misc-virtual-shadowing <misc/virtual-shadowing.html>`_, "Yes"
    `modernize-avoid-bind <modernize/avoid-bind.html>`_, "Yes"
    `modernize-avoid-c-arrays <modernize/avoid-c-arrays.html>`_,
    `modernize-concat-nested-namespaces <modernize/concat-nested-namespaces.html>`_, "Yes"

@@ -12,9 +12,13 @@
 #include "ConfusableIdentifierCheck.h"
 #include "ConstCorrectnessCheck.h"
 #include "DefinitionsInHeadersCheck.h"
+#include "FilterCheckCheck.h"
 #include "MisleadingBidirectional.h"
 #include "MisleadingIdentifier.h"
 #include "MisplacedConstCheck.h"
+#include "MyClassCheckCheck.h"
+#include "MyFirstCheckCheck.h"
+#include "MyReturnCheckCheck.h"
 #include "NewDeleteOverloadsCheck.h"
 #include "NoRecursionCheck.h"
 #include "NonCopyableObjects.h"
@@ -27,6 +31,7 @@
 #include "UnusedAliasDeclsCheck.h"
 #include "UnusedParametersCheck.h"
 #include "UnusedUsingDeclsCheck.h"
+#include "VirtualShadowingCheck.h"
 
 namespace clang {
 namespace tidy {
@@ -41,11 +46,19 @@ public:
         "misc-const-correctness");
     CheckFactories.registerCheck<DefinitionsInHeadersCheck>(
         "misc-definitions-in-headers");
+    CheckFactories.registerCheck<FilterCheckCheck>(
+        "misc-filter-check");
     CheckFactories.registerCheck<MisleadingBidirectionalCheck>(
         "misc-misleading-bidirectional");
     CheckFactories.registerCheck<MisleadingIdentifierCheck>(
         "misc-misleading-identifier");
     CheckFactories.registerCheck<MisplacedConstCheck>("misc-misplaced-const");
+    CheckFactories.registerCheck<MyClassCheckCheck>(
+        "misc-my-class-check");
+    CheckFactories.registerCheck<MyFirstCheckCheck>(
+        "misc-my-first-check");
+    CheckFactories.registerCheck<MyReturnCheckCheck>(
+        "misc-my-return-check");
     CheckFactories.registerCheck<NewDeleteOverloadsCheck>(
         "misc-new-delete-overloads");
     CheckFactories.registerCheck<NoRecursionCheck>("misc-no-recursion");
@@ -68,6 +81,8 @@ public:
         "misc-unused-parameters");
     CheckFactories.registerCheck<UnusedUsingDeclsCheck>(
         "misc-unused-using-decls");
+    CheckFactories.registerCheck<VirtualShadowingCheck>(
+        "misc-virtual-shadowing");
   }
 };
 

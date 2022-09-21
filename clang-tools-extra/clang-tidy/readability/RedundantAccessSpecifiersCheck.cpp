@@ -80,3 +80,4 @@ void RedundantAccessSpecifiersCheck::check(
 } // namespace readability
 } // namespace tidy
 } // namespace clang
+

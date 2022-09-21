@@ -104,6 +104,31 @@ New checks
 
   Warns when a struct or class uses const or reference (lvalue or rvalue) data members.
 
+- New :doc:`misc-filter-check
+  <clang-tidy/checks/misc/filter-check>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`misc-my-class-check
+  <clang-tidy/checks/misc/my-class-check>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`misc-my-first-check
+  <clang-tidy/checks/misc/my-first-check>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`misc-my-return-check
+  <clang-tidy/checks/misc/my-return-check>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`misc-virtual-shadowing
+  <clang-tidy/checks/misc/virtual-shadowing>` check.
+
+  FIXME: add release notes.
+
 New check aliases
 ^^^^^^^^^^^^^^^^^
 

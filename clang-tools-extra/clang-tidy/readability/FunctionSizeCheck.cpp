@@ -10,6 +10,7 @@
 #include "clang/AST/RecursiveASTVisitor.h"
 #include "clang/ASTMatchers/ASTMatchFinder.h"
 #include "llvm/ADT/BitVector.h"
+#include <iostream>
 
 using namespace clang::ast_matchers;
 
@@ -166,11 +167,15 @@ void FunctionSizeCheck::check(const MatchFinder::MatchResult &Result) {
 
   // Count the lines including whitespace and comments. Really simple.
   if (const Stmt *Body = Func->getBody()) {
+    std::string Name = Func->getNameAsString();
+
     SourceManager *SM = Result.SourceManager;
     if (SM->isWrittenInSameFile(Body->getBeginLoc(), Body->getEndLoc())) {
       FI.Lines = SM->getSpellingLineNumber(Body->getEndLoc()) -
                  SM->getSpellingLineNumber(Body->getBeginLoc());
     }
+    std::cout<< Name << ":" << FI.Lines <<std::endl;
+    
   }
 
   unsigned ActualNumberParameters = Func->getNumParams();

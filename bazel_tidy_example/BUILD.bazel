@@ -1,0 +1,31 @@
+package(default_visibility = ["//visibility:public"])
+
+## Replace workspace_name and dir_path as per your setup.
+load("@com_grail_bazel_compdb//:defs.bzl", "compilation_database")
+load("@com_grail_bazel_output_base_util//:defs.bzl", "OUTPUT_BASE")
+
+
+cc_library(
+    name = "helper",
+    hdrs =["helper.hpp"],
+    srcs = ["helper.cpp"],    
+)
+
+
+cc_binary(
+    name = "main",    
+    srcs = ["main.cpp"],    
+    deps = [
+        ":helper"
+    ],
+    copts=["-Werror"]    
+)
+
+
+compilation_database(
+    name = "compdb",
+    targets = [
+        ":main",
+    ],
+    output_base = '/home/xiaox/sandbox/llvm-project/bazel_tidy_example',    
+)

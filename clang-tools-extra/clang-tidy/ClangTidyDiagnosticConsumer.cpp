@@ -39,6 +39,8 @@
 #include <tuple>
 #include <utility>
 #include <vector>
+#include <iostream>
+
 using namespace clang;
 using namespace tidy;
 
@@ -177,6 +179,7 @@ DiagnosticBuilder ClangTidyContext::diag(
   assert(Loc.isValid());
   unsigned ID = DiagEngine->getDiagnosticIDs()->getCustomDiagID(
       Level, (Description + " [" + CheckName + "]").str());
+  std::cout<< CheckName.str()<<std::endl;
   CheckNamesByDiagnosticID.try_emplace(ID, CheckName);
   return DiagEngine->Report(Loc, ID);
 }
