@@ -12,6 +12,8 @@
 #include "llvm/Support/Error.h"
 #include "llvm/Support/YAMLParser.h"
 
+#include <iostream>
+
 namespace clang {
 namespace tidy {
 
@@ -24,17 +26,20 @@ ClangTidyCheck::ClangTidyCheck(StringRef CheckName, ClangTidyContext *Context)
 
 DiagnosticBuilder ClangTidyCheck::diag(SourceLocation Loc, StringRef Message,
                                        DiagnosticIDs::Level Level) {
+  //std::cout<<"ClangTidyCheck::diag called\n";
   return Context->diag(CheckName, Loc, Message, Level);
 }
 
 DiagnosticBuilder ClangTidyCheck::diag(StringRef Message,
                                        DiagnosticIDs::Level Level) {
+  //std::cout<<"ClangTidyCheck::diag called\n";  
   return Context->diag(CheckName, Message, Level);
 }
 
 DiagnosticBuilder
 ClangTidyCheck::configurationDiag(StringRef Description,
                                   DiagnosticIDs::Level Level) const {
+  //std::cout<<"ClangTidyCheck::diag called\n";  
   return Context->configurationDiag(Description, Level);
 }
 

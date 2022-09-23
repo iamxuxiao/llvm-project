@@ -8,6 +8,13 @@ configure_file(
   ${CMAKE_CURRENT_BINARY_DIR}/clang-tidy-config.h)
 include_directories(BEFORE ${CMAKE_CURRENT_BINARY_DIR})
 
+include(FetchContent)
+
+#FetchContent_Declare(json URL https://github.com/nlohmann/json/releases/download/v3.11.2/json.tar.xz)
+#FetchContent_MakeAvailable(json)
+#find_package(nlohmann_json 3.11.2 REQUIRED)
+#add_subdirectory(nlohmann_json)
+
 add_clang_library(clangTidy
   ClangTidy.cpp
   ClangTidyCheck.cpp
@@ -38,6 +45,7 @@ clang_target_link_libraries(clangTidy
   clangSerialization
   clangTooling
   clangToolingCore
+#  nlohmann_json::nlohmann_json
   )
 
 if(CLANG_TIDY_ENABLE_STATIC_ANALYZER)
@@ -45,6 +53,7 @@ if(CLANG_TIDY_ENABLE_STATIC_ANALYZER)
     PRIVATE
     clangStaticAnalyzerCore
     clangStaticAnalyzerFrontend
+    #nlohmann_json::nlohmann_json     
   )
 endif()
 

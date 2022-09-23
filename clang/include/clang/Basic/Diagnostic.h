@@ -36,6 +36,7 @@
 #include <type_traits>
 #include <utility>
 #include <vector>
+#include <iostream>
 
 namespace llvm {
 class Error;
@@ -1349,6 +1350,7 @@ public:
   template <typename T, typename = typename std::enable_if<
                             !std::is_lvalue_reference<T>::value>::type>
   const DiagnosticBuilder &operator<<(T &&V) const {
+    
     assert(isActive() && "Clients must not add to cleared diagnostic!");
     const StreamingDiagnostic &DB = *this;
     DB << std::move(V);

@@ -42,6 +42,14 @@
 #include "llvm/Support/Process.h"
 #include <algorithm>
 #include <utility>
+#include <fstream>
+
+//#include "llvm/Support/JSON.h"
+#include "json.hpp"
+
+//#include "nlohmann/json.hpp"
+using json = nlohmann::json;
+
 
 #if CLANG_TIDY_ENABLE_STATIC_ANALYZER
 #include "clang/Analysis/PathDiagnostic.h"
@@ -123,6 +131,33 @@ public:
     {
       auto Level = static_cast<DiagnosticsEngine::Level>(Error.DiagLevel);
       std::string Name = Error.DiagnosticName;
+
+      std::cout<<"[reportDiagnostic] "<< Name << std::endl;
+      std::cout<<"  [DiagnosticName] "<< Error.DiagnosticName << std::endl;
+      std::cout<<"  [DiagnosticMessage] "<<  Error.Message.Message << std::endl;
+      
+      // llvm::json::Object json_diag{{"range", "10"},
+      //                              {"severity","a"},
+      //                              {"message", "b"},
+      // };
+      json j1 = {
+                 {"pi", 3.141},
+                 {"happy", true},
+                 {"name", "Niels"},
+                 {"nothing", nullptr},
+                 {"answer", {
+                             {"everything", 42}
+                   }},
+                 {"list", {1, 0, 2}},
+                 {"object", {
+                             {"currency", "USD"},
+                             {"value", 42.99}
+                   }}
+      };
+
+      std::ofstream file("key.json");
+      file << j1;
+      
       if (!Error.EnabledDiagnosticAliases.empty())
         Name += "," + llvm::join(Error.EnabledDiagnosticAliases, ",");
       if (Error.IsWarningAsError) {
@@ -593,7 +628,10 @@ void handleErrors(llvm::ArrayRef<ClangTidyError> Errors,
   if (!InitialWorkingDir)
     llvm::report_fatal_error("Cannot get current working path.");
 
+  std::cout<<"total_size = " <<  Errors.size() << "\n";
+  
   for (const ClangTidyError &Error : Errors) {
+    std::cout<<"handleErrors\n";
     if (!Error.BuildDirectory.empty()) {
       // By default, the working directory of file system is the current
       // clang-tidy running directory.

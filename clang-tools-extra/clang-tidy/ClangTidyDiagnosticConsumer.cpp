@@ -15,6 +15,7 @@
 ///
 //===----------------------------------------------------------------------===//
 
+
 #include "ClangTidyDiagnosticConsumer.h"
 #include "ClangTidyOptions.h"
 #include "GlobList.h"
@@ -91,9 +92,11 @@ protected:
 
     if (Level == DiagnosticsEngine::Note) {
       Error.Notes.push_back(TidyMessage);
-      for (const CharSourceRange &SourceRange : ValidRanges)
+      for (const CharSourceRange &SourceRange : ValidRanges){
+        std::cout<<"Error.Notes.back().Ranges.emplace_back\n";
         Error.Notes.back().Ranges.emplace_back(Loc.getManager(),
                                                ToCharRange(SourceRange));
+      }
       return;
     }
     assert(Error.Message.Message.empty() && "Overwriting a diagnostic message");
@@ -177,9 +180,9 @@ DiagnosticBuilder ClangTidyContext::diag(
     StringRef CheckName, SourceLocation Loc, StringRef Description,
     DiagnosticIDs::Level Level /* = DiagnosticIDs::Warning*/) {
   assert(Loc.isValid());
+
   unsigned ID = DiagEngine->getDiagnosticIDs()->getCustomDiagID(
       Level, (Description + " [" + CheckName + "]").str());
-  std::cout<< CheckName.str()<<std::endl;
   CheckNamesByDiagnosticID.try_emplace(ID, CheckName);
   return DiagEngine->Report(Loc, ID);
 }
@@ -194,6 +197,7 @@ DiagnosticBuilder ClangTidyContext::diag(
 }
 
 DiagnosticBuilder ClangTidyContext::diag(const tooling::Diagnostic &Error) {
+  
   SourceManager &SM = DiagEngine->getSourceManager();
   llvm::ErrorOr<const FileEntry *> File =
       SM.getFileManager().getFile(Error.Message.FilePath);
@@ -214,7 +218,7 @@ DiagnosticBuilder ClangTidyContext::configurationDiag(
 bool ClangTidyContext::shouldSuppressDiagnostic(
     DiagnosticsEngine::Level DiagLevel, const Diagnostic &Info,
     SmallVectorImpl<tooling::Diagnostic> &NoLintErrors, bool AllowIO,
-    bool EnableNoLintBlocks) {
+    bool EnableNoLintBlocks) {  
   std::string CheckName = getCheckName(Info.getID());
   return NoLintHandler.shouldSuppress(DiagLevel, Info, CheckName, NoLintErrors,
                                       AllowIO, EnableNoLintBlocks);
@@ -308,12 +312,14 @@ void ClangTidyDiagnosticConsumer::finalizeLastError() {
       ++Context.Stats.ErrorsIgnoredCheckFilter;
       Errors.pop_back();
     } else if (!LastErrorRelatesToUserCode) {
+      std::cout<<"SKIP THIS MATCH()\n";      
       ++Context.Stats.ErrorsIgnoredNonUserCode;
       Errors.pop_back();
     } else if (!LastErrorPassesLineFilter) {
       ++Context.Stats.ErrorsIgnoredLineFilter;
       Errors.pop_back();
     } else {
+      std::cout<<"No Pop()\n";
       ++Context.Stats.ErrorsDisplayed;
     }
   }
@@ -423,6 +429,7 @@ void ClangTidyDiagnosticConsumer::HandleDiagnostic(
     FullSourceLoc Loc;
     if (Info.getLocation().isValid() && Info.hasSourceManager())
       Loc = FullSourceLoc(Info.getLocation(), Info.getSourceManager());
+    std::cout<<"emitDiagnostic\n";
     Converter.emitDiagnostic(Loc, DiagLevel, Message, Info.getRanges(),
                              Info.getFixItHints());
   }
