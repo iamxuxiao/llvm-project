@@ -19,12 +19,23 @@ AliasB* foo(int x,double b, const AliasB& b_instance) {
   return new B;
 }
 
+A* ReturnTest3(int a){
+  if(true){
+    while(false){
+      if(a>0){
+        return nullptr;
+      }
+    }
+  }
+  return 0;
+}
+
+
 A* ReturnTest2(int a){
   if(a>0)
     return new A;
   return nullptr;
 }
-
 
 A* ReturnTest1(int a){
   if(a>0){
@@ -39,13 +50,15 @@ A* ReturnTest1(int a){
 
 
 A* ReturnTest3(int a){
-  if(true){
+  while(true){
     if(true){
+      if(true){
         if(a>0){
           return nullptr;
         }else{
           return 0;
         }       
+      }
     }
   }
 }

@@ -13,6 +13,7 @@
 #include "ConstCorrectnessCheck.h"
 #include "DefinitionsInHeadersCheck.h"
 #include "FilterCheckCheck.h"
+#include "LhsCheckCheck.h"
 #include "MisleadingBidirectional.h"
 #include "MisleadingIdentifier.h"
 #include "MisplacedConstCheck.h"
@@ -48,6 +49,8 @@ public:
         "misc-definitions-in-headers");
     CheckFactories.registerCheck<FilterCheckCheck>(
         "misc-filter-check");
+    CheckFactories.registerCheck<LhsCheckCheck>(
+        "misc-lhs-check");
     CheckFactories.registerCheck<MisleadingBidirectionalCheck>(
         "misc-misleading-bidirectional");
     CheckFactories.registerCheck<MisleadingIdentifierCheck>(

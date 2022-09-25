@@ -109,6 +109,11 @@ New checks
 
   FIXME: add release notes.
 
+- New :doc:`misc-lhs-check
+  <clang-tidy/checks/misc/lhs-check>` check.
+
+  FIXME: add release notes.
+
 - New :doc:`misc-my-class-check
   <clang-tidy/checks/misc/my-class-check>` check.
 

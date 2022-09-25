@@ -32,6 +32,7 @@ add_clang_library(clangTidyMiscModule
   DefinitionsInHeadersCheck.cpp
   ConfusableIdentifierCheck.cpp
   FilterCheckCheck.cpp
+  LhsCheckCheck.cpp
   MiscTidyModule.cpp
   MisleadingBidirectional.cpp
   MisleadingIdentifier.cpp
