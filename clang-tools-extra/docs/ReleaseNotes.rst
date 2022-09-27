@@ -129,6 +129,11 @@ New checks
 
   FIXME: add release notes.
 
+- New :doc:`misc-raw-tree
+  <clang-tidy/checks/misc/raw-tree>` check.
+
+  FIXME: add release notes.
+
 - New :doc:`misc-virtual-shadowing
   <clang-tidy/checks/misc/virtual-shadowing>` check.
 

@@ -312,14 +312,14 @@ void ClangTidyDiagnosticConsumer::finalizeLastError() {
       ++Context.Stats.ErrorsIgnoredCheckFilter;
       Errors.pop_back();
     } else if (!LastErrorRelatesToUserCode) {
-      std::cout<<"SKIP THIS MATCH()\n";      
+
       ++Context.Stats.ErrorsIgnoredNonUserCode;
       Errors.pop_back();
     } else if (!LastErrorPassesLineFilter) {
       ++Context.Stats.ErrorsIgnoredLineFilter;
       Errors.pop_back();
     } else {
-      std::cout<<"No Pop()\n";
+
       ++Context.Stats.ErrorsDisplayed;
     }
   }
@@ -429,7 +429,6 @@ void ClangTidyDiagnosticConsumer::HandleDiagnostic(
     FullSourceLoc Loc;
     if (Info.getLocation().isValid() && Info.hasSourceManager())
       Loc = FullSourceLoc(Info.getLocation(), Info.getSourceManager());
-    std::cout<<"emitDiagnostic\n";
     Converter.emitDiagnostic(Loc, DiagLevel, Message, Info.getRanges(),
                              Info.getFixItHints());
   }
