@@ -1,0 +1,139 @@
+{"Signature":"Name:template_function; ReturnType:'T'; IsPointer:0; ParameterType:"}
+{"Signature":"'T' does not refer to a value"}
+{"Signature":"Name:func_3; ReturnType:'A *'; IsPointer:1; ParameterType:"}
+{"Signature":"Name:func_4; ReturnType:'A *'; IsPointer:1; ParameterType:,int,double"}
+{"Signature":"a type specifier is required for all declarations"}
+{"Signature":"template specialization requires 'template<>'"}
+{"Signature":"Name:template_function; ReturnType:'int'; IsPointer:0; ParameterType:"}
+{"Signature":"Name:template_function; ReturnType:'T'; IsPointer:0; ParameterType:,T"}
+{"Signature":"Name:func_3; ReturnType:'A *'; IsPointer:1; ParameterType:"}
+{"Signature":"Name:func_4; ReturnType:'A *'; IsPointer:1; ParameterType:,int,double"}
+{"Signature":"a type specifier is required for all declarations"}
+{"Signature":"template specialization requires 'template<>'"}
+{"Signature":"Name:template_function; ReturnType:'int'; IsPointer:0; ParameterType:"}
+{"Signature":"Name:template_function; ReturnType:'T'; IsPointer:0; ParameterType:,T"}
+{"Signature":"Name:func_3; ReturnType:'A *'; IsPointer:1; ParameterType:"}
+{"Signature":"Name:func_4; ReturnType:'A *'; IsPointer:1; ParameterType:,int,double"}
+{"Signature":"unknown type name 'template_function'"}
+{"Signature":"Name:template_func; ReturnType:'T'; IsPointer:0; ParameterType:,T"}
+{"Signature":"Name:func_3; ReturnType:'A *'; IsPointer:1; ParameterType:"}
+{"Signature":"Name:func_4; ReturnType:'A *'; IsPointer:1; ParameterType:,int,double"}
+{"Signature":"unknown type name 'template_func'"}
+{"Signature":"Name:template_func; ReturnType:'void'; IsPointer:0; ParameterType:,T"}
+{"Signature":"Name:func_3; ReturnType:'A *'; IsPointer:1; ParameterType:"}
+{"Signature":"Name:func_4; ReturnType:'A *'; IsPointer:1; ParameterType:,int,double"}
+{"Signature":"unknown type name 'template_func'"}
+{"Signature":"Name:template_func; ReturnType:'void'; IsPointer:0; ParameterType:,T"}
+{"Signature":"Name:func_3; ReturnType:'A *'; IsPointer:1; ParameterType:"}
+{"Signature":"Name:func_4; ReturnType:'A *'; IsPointer:1; ParameterType:,int,double"}
+{"Signature":"unknown type name 'template_func'"}
+{"Signature":"Name:template_func; ReturnType:'void'; IsPointer:0; ParameterType:,T"}
+{"Signature":"Name:func_3; ReturnType:'A *'; IsPointer:1; ParameterType:"}
+{"Signature":"Name:func_4; ReturnType:'A *'; IsPointer:1; ParameterType:,int,double"}
+{"Signature":"unknown type name 'template_func'"}
+{"Signature":"no input files"}
+{"Signature":"no such file or directory: 'main.cpp'"}
+{"Signature":"unable to handle compilation, expected exactly one compiler job in ''"}
+{"Signature":"no input files"}
+{"Signature":"no such file or directory: 'main.cpp'"}
+{"Signature":"unable to handle compilation, expected exactly one compiler job in ''"}
+{"Signature":"no input files"}
+{"Signature":"no such file or directory: 'main.cpp'"}
+{"Signature":"unable to handle compilation, expected exactly one compiler job in ''"}
+{"Signature":"no input files"}
+{"Signature":"no such file or directory: 'main.cpp'"}
+{"Signature":"unable to handle compilation, expected exactly one compiler job in ''"}
+{"Signature":"Name:template_func; ReturnType:'void'; IsPointer:0; ParameterType:,T"}
+{"Signature":"Name:func_3; ReturnType:'A *'; IsPointer:1; ParameterType:"}
+{"Signature":"Name:func_4; ReturnType:'A *'; IsPointer:1; ParameterType:,int,double"}
+{"Signature":"unknown type name 'template_func'"}
+{"Signature":"Name:template_func; ReturnType:'void'; IsPointer:0; ParameterType:,T"}
+{"Signature":"Name:template_func; ReturnType:'void'; IsPointer:0; ParameterType:,class A"}
+{"Signature":"unused variable 'obj2'"}
+{"Signature":"Name:func_3; ReturnType:'A *'; IsPointer:1; ParameterType:"}
+{"Signature":"Name:func_4; ReturnType:'A *'; IsPointer:1; ParameterType:,int,double"}
+{"Signature":"Name:template_func; ReturnType:'void'; IsPointer:0; ParameterType:,T"}
+{"Signature":"Name:template_func; ReturnType:'void'; IsPointer:0; ParameterType:,class A"}
+{"Signature":"Name:func_3; ReturnType:'A *'; IsPointer:1; ParameterType:"}
+{"Signature":"Name:func_4; ReturnType:'A *'; IsPointer:1; ParameterType:,int,double"}
+{"Signature":"function  'func_2' body"}
+{"Signature":"use of undeclared identifier 'func_3'"}
+{"Signature":"function  'func_2' body"}
+{"Signature":"function  'func_2' body"}
+{"Signature":"function  'func_2' body"}
+{"Signature":"function  'func_2' body"}
+{"Signature":"function  'func_2' body"}
+{"Signature":"function  'func_2' body. Var name result_maybe"}
+{"Signature":"function  ['func_2']  Var name [result_maybe]"}
+{"Signature":"function  ['func_2']  Var name [result_maybe]"}
+{"Signature":"<== has !some_name "}
+{"Signature":"function  ['func_2']  Var name [result_maybe]"}
+{"Signature":"function  ['func_2']  Var name [result_maybe]"}
+{"Signature":"has if statement contains result_maybe "}
+{"Signature":"function  ['func_2']  Var name [result_maybe]"}
+{"Signature":"has if statement contains result_maybe "}
+{"Signature":"function  ['func_2']  Var name [result_maybe]"}
+{"Signature":"has if statement contains result_maybe "}
+{"Signature":"has if statement contains result_maybe "}
+{"Signature":"no matching function for call to 'UpperStreamFunction'"}
+{"Signature":"function  ['DownstreamConsumer']  Var name [result_maybe]"}
+{"Signature":"has if statement contains result_maybe "}
+{"Signature":"has if statement contains result_maybe "}
+{"Signature":"function  ['DownstreamConsumer']  Var name [result_maybe]"}
+{"Signature":"has if statement contains result_maybe "}
+{"Signature":"has if statement contains result_maybe "}
+{"Signature":"1st matched function  ['DownstreamConsumer']  Var name [result_maybe]"}
+{"Signature":"has if statement contains result_maybe. Matched Size=1 "}
+{"Signature":"has if statement contains result_maybe. Matched Size=1 "}
+{"Signature":"1st matched function  ['DownstreamConsumer']  Var name [result_maybe]"}
+{"Signature":"has if statement contains result_maybe. Matched Size=1 "}
+{"Signature":"has if statement contains result_maybe. Matched Size=1 "}
+{"Signature":"1st matched function  ['DownstreamConsumer']  Var name [result_maybe]"}
+{"Signature":"has if statement contains result_maybe. Matched Size=1 "}
+{"Signature":"has if statement contains result_maybe. Matched Size=1 "}
+{"Signature":"1st matched function  ['DownstreamConsumer']  Var name [result_maybe]"}
+{"Signature":"has if statement contains result_maybe. Matched Size=1 "}
+{"Signature":"has if statement contains result_maybe. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name []"}
+{"Signature":"matched compound stmt, var name [result_maybe_1]"}
+{"Signature":"matched compound stmt, var name [result_maybe_1]"}
+{"Signature":"matched compound stmt, var name [result_maybe_2]"}
+{"Signature":"matched compound stmt, var name [result_maybe_1]"}
+{"Signature":"matched compound stmt, var name [result_maybe_2]"}
+{"Signature":"matched compound stmt, var name [result_maybe_1]"}
+{"Signature":"matched compound stmt, var name [result_maybe_2]"}
+{"Signature":"matched compound stmt, var name [result_maybe_1]"}
+{"Signature":"matched compound stmt, var name [result_maybe_2]"}
+{"Signature":"matched compound stmt, var name [result_maybe_1]"}
+{"Signature":"has if statement contains result_maybe_1. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_2]"}
+{"Signature":"has if statement contains result_maybe_2. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_1]"}
+{"Signature":"has if statement contains result_maybe_1. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_2]"}
+{"Signature":"has if statement contains result_maybe_2. Matched Size=1 "}
+{"Signature":"has if statement contains result_maybe_1. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_1]"}
+{"Signature":"has if statement contains result_maybe_1. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_2]"}
+{"Signature":"has if statement contains result_maybe_2. Matched Size=1 "}
+{"Signature":"has if statement contains result_maybe_1. Matched Size=1 "}
+{"Signature":"has if statement contains result_maybe_2. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_3]"}
+{"Signature":"has if statement contains result_maybe_3. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_1]"}
+{"Signature":"matched compound stmt, var name [result_maybe_2]"}
+{"Signature":"has if statement contains result_maybe_2. Matched Size=1 "}
+{"Signature":"has if statement contains result_maybe_1. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_3]"}
+{"Signature":"matched compound stmt, var name [result_maybe_1]"}
+{"Signature":"matched compound stmt, var name [result_maybe_2]"}
+{"Signature":"[!]has if statement contains result_maybe_2. Matched Size=1 "}
+{"Signature":"[!]has if statement contains result_maybe_1. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_3]"}
+{"Signature":"matched compound stmt, var name [result_maybe_1]"}
+{"Signature":"matched compound stmt, var name [result_maybe_2]"}
+{"Signature":"[!]has if statement contains result_maybe_2. Matched Size=1 "}
+{"Signature":"[!]has if statement contains result_maybe_1. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_3]"}
+{"Signature":"[nullptr] has if statement contains result_maybe_3. Matched Size=1 "}
