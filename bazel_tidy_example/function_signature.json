@@ -201,3 +201,119 @@
 {"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
 {"Signature":" Missing null check for another_lane_ptr_maybe "}
 {"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":" Missing null check for lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":"'std/optional.hpp' file not found"}
+{"Signature":" Missing null check for lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":"use of undeclared identifier 'std'"}
+{"Signature":"use of undeclared identifier 'std'"}
+{"Signature":"use of undeclared identifier 'std'"}
+{"Signature":"'Lane' does not refer to a value"}
+{"Signature":"expected expression"}
+{"Signature":" Missing null check for lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":"functions that differ only in their return type cannot be overloaded"}
+{"Signature":" Missing null check for lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":" Missing null check for lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":" Missing null check for lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":" Missing null check for lane_ptr "}
+{"Signature":"matched compound stmt, var name [lane_ptr]"}
+{"Signature":"use of undeclared identifier 'lane_ptr_maybe'"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr]"}
+{"Signature":"use of undeclared identifier 'another_lane_ptr_maybe'; did you mean 'another_lane_ptr'?"}
+{"Signature":" Missing null check for lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":" Missing null check for another_lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":"invalid operands to binary expression ('const std::optional<Lane>' and 'std::nullptr_t')"}
+{"Signature":" Missing null check for lane_ptr "}
+{"Signature":"matched compound stmt, var name [lane_ptr]"}
+{"Signature":"use of undeclared identifier 'lane_ptr_maybe'"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr]"}
+{"Signature":"use of undeclared identifier 'another_lane_ptr_maybe'; did you mean 'another_lane_ptr'?"}
+{"Signature":" Missing null check for lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":" Missing null check for another_lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":" Missing null check for lane_ptr "}
+{"Signature":"matched compound stmt, var name [lane_ptr]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr]"}
+{"Signature":" Missing null check for lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":" Missing null check for another_lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":" Missing null check for lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":" Missing null check for another_lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":" Missing null check for lane_ptr "}
+{"Signature":"matched compound stmt, var name [lane_ptr]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr]"}
+{"Signature":" Missing null check for lane_ptr "}
+{"Signature":"matched compound stmt, var name [lane_ptr]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr]"}
+{"Signature":" Missing null check for lane_ptr "}
+{"Signature":"matched compound stmt, var name [lane_ptr]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr]"}
+{"Signature":" Missing null check for lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":" Missing null check for lane_ptr "}
+{"Signature":"matched compound stmt, var name [lane_ptr]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr]"}
+{"Signature":" Missing null check for lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":" Missing null check for lane_ptr "}
+{"Signature":"matched compound stmt, var name [lane_ptr]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr]"}
+{"Signature":" Missing null check for lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":" Missing null check for lane_ptr "}
+{"Signature":"matched compound stmt, var name [lane_ptr]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr]"}
+{"Signature":" Missing null check for lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":"matched compound stmt, var name [lane_ptr]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr]"}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":" Missing null check for ==> lane_ptr "}
+{"Signature":"matched compound stmt, var name [lane_ptr]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr]"}
+{"Signature":" Missing null check for ==> lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":" Missing null check for ==> lane_ptr "}
+{"Signature":"matched compound stmt, var name [lane_ptr]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr]"}
+{"Signature":" Missing null check for ==> lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":" Missing null check for ==> another_lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":" Missing null check for ==> lane_ptr "}
+{"Signature":"matched compound stmt, var name [lane_ptr]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr]"}
+{"Signature":" Missing null check for ==> lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":" Missing null check for ==> another_lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":"invalid operands to binary expression ('const std::optional<Lane>' and 'std::nullptr_t')"}
+{"Signature":" Missing null check for ==> lane_ptr "}
+{"Signature":"matched compound stmt, var name [lane_ptr]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr]"}
+{"Signature":" Missing null check for ==> lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
