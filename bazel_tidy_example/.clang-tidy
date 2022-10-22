@@ -1,0 +1,5 @@
+Checks: '-*,misc-xcheck-compound-match'
+
+CheckOptions:
+  - { key: misc-xcheck-compound-match.TargetFunctionNames, value: 'GetMapLaneById;UpperStreamFunction' }
+

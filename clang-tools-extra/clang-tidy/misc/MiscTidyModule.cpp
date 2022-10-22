@@ -12,6 +12,7 @@
 #include "ConfusableIdentifierCheck.h"
 #include "ConstCorrectnessCheck.h"
 #include "DefinitionsInHeadersCheck.h"
+#include "FunctionSignatureCheck.h"
 #include "MisleadingBidirectional.h"
 #include "MisleadingIdentifier.h"
 #include "MisplacedConstCheck.h"
@@ -20,6 +21,7 @@
 #include "NonCopyableObjects.h"
 #include "NonPrivateMemberVariablesInClassesCheck.h"
 #include "RedundantExpressionCheck.h"
+#include "ReturnPointerCheck.h"
 #include "StaticAssertCheck.h"
 #include "ThrowByValueCatchByReferenceCheck.h"
 #include "UnconventionalAssignOperatorCheck.h"
@@ -27,6 +29,8 @@
 #include "UnusedAliasDeclsCheck.h"
 #include "UnusedParametersCheck.h"
 #include "UnusedUsingDeclsCheck.h"
+#include "XcheckCompoundMatchCheck.h"
+#include "XcheckReturnPointerCheck.h"
 
 namespace clang {
 namespace tidy {
@@ -41,6 +45,8 @@ public:
         "misc-const-correctness");
     CheckFactories.registerCheck<DefinitionsInHeadersCheck>(
         "misc-definitions-in-headers");
+    CheckFactories.registerCheck<FunctionSignatureCheck>(
+        "misc-function-signature");
     CheckFactories.registerCheck<MisleadingBidirectionalCheck>(
         "misc-misleading-bidirectional");
     CheckFactories.registerCheck<MisleadingIdentifierCheck>(
@@ -55,6 +61,8 @@ public:
         "misc-non-private-member-variables-in-classes");
     CheckFactories.registerCheck<RedundantExpressionCheck>(
         "misc-redundant-expression");
+    CheckFactories.registerCheck<ReturnPointerCheck>(
+        "misc-return-pointer");
     CheckFactories.registerCheck<StaticAssertCheck>("misc-static-assert");
     CheckFactories.registerCheck<ThrowByValueCatchByReferenceCheck>(
         "misc-throw-by-value-catch-by-reference");
@@ -68,6 +76,10 @@ public:
         "misc-unused-parameters");
     CheckFactories.registerCheck<UnusedUsingDeclsCheck>(
         "misc-unused-using-decls");
+    CheckFactories.registerCheck<XcheckCompoundMatchCheck>(
+        "misc-xcheck-compound-match");
+    CheckFactories.registerCheck<XcheckReturnPointerCheck>(
+        "misc-xcheck-return-pointer");
   }
 };
 

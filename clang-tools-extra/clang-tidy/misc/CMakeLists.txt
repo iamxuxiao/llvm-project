@@ -31,6 +31,7 @@ add_clang_library(clangTidyMiscModule
   ConstCorrectnessCheck.cpp
   DefinitionsInHeadersCheck.cpp
   ConfusableIdentifierCheck.cpp
+  FunctionSignatureCheck.cpp
   MiscTidyModule.cpp
   MisleadingBidirectional.cpp
   MisleadingIdentifier.cpp
@@ -40,6 +41,7 @@ add_clang_library(clangTidyMiscModule
   NonCopyableObjects.cpp
   NonPrivateMemberVariablesInClassesCheck.cpp
   RedundantExpressionCheck.cpp
+  ReturnPointerCheck.cpp
   StaticAssertCheck.cpp
   ThrowByValueCatchByReferenceCheck.cpp
   UnconventionalAssignOperatorCheck.cpp
@@ -47,6 +49,8 @@ add_clang_library(clangTidyMiscModule
   UnusedAliasDeclsCheck.cpp
   UnusedParametersCheck.cpp
   UnusedUsingDeclsCheck.cpp
+  XcheckCompoundMatchCheck.cpp
+  XcheckReturnPointerCheck.cpp
 
   LINK_LIBS
   clangAnalysis

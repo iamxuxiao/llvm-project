@@ -242,6 +242,7 @@ Clang-Tidy Checks
    `misc-confusable-identifiers <misc/confusable-identifiers.html>`_,
    `misc-const-correctness <misc/const-correctness.html>`_, "Yes"
    `misc-definitions-in-headers <misc/definitions-in-headers.html>`_, "Yes"
+   `misc-function-signature <misc/function-signature.html>`_,
    `misc-misleading-bidirectional <misc/misleading-bidirectional.html>`_,
    `misc-misleading-identifier <misc/misleading-identifier.html>`_,
    `misc-misplaced-const <misc/misplaced-const.html>`_,
@@ -250,6 +251,7 @@ Clang-Tidy Checks
    `misc-non-copyable-objects <misc/non-copyable-objects.html>`_,
    `misc-non-private-member-variables-in-classes <misc/non-private-member-variables-in-classes.html>`_,
    `misc-redundant-expression <misc/redundant-expression.html>`_, "Yes"
+   `misc-return-pointer <misc/return-pointer.html>`_, "Yes"
    `misc-static-assert <misc/static-assert.html>`_, "Yes"
    `misc-throw-by-value-catch-by-reference <misc/throw-by-value-catch-by-reference.html>`_,
    `misc-unconventional-assign-operator <misc/unconventional-assign-operator.html>`_,
@@ -257,6 +259,8 @@ Clang-Tidy Checks
    `misc-unused-alias-decls <misc/unused-alias-decls.html>`_, "Yes"
    `misc-unused-parameters <misc/unused-parameters.html>`_, "Yes"
    `misc-unused-using-decls <misc/unused-using-decls.html>`_, "Yes"
+   `misc-xcheck-compound-match <misc/xcheck-compound-match.html>`_, "Yes"
+   `misc-xcheck-return-pointer <misc/xcheck-return-pointer.html>`_,
    `modernize-avoid-bind <modernize/avoid-bind.html>`_, "Yes"
    `modernize-avoid-c-arrays <modernize/avoid-c-arrays.html>`_,
    `modernize-concat-nested-namespaces <modernize/concat-nested-namespaces.html>`_, "Yes"

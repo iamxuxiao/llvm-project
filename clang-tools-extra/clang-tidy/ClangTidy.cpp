@@ -43,6 +43,13 @@
 #include <algorithm>
 #include <utility>
 
+//use external json utility
+#include <fstream>
+#include <iostream>
+#include "json.hpp"
+using json = nlohmann::json;
+
+
 #if CLANG_TIDY_ENABLE_STATIC_ANALYZER
 #include "clang/Analysis/PathDiagnostic.h"
 #include "clang/StaticAnalyzer/Frontend/AnalysisConsumer.h"
@@ -114,6 +121,19 @@ public:
 
   SourceManager &getSourceManager() { return SourceMgr; }
 
+
+  void outputJson(const ClangTidyError &Error,std::string json_filename){
+
+    std::string Message = Error.Message.Message;    
+    json error_json = {{"Signature", Message},
+    };
+    
+    std::fstream json_file;
+    json_file.open(json_filename, std::ios_base::app | std::ios_base::in);
+    if (json_file.is_open())
+      json_file << error_json << std::endl;
+  }
+  
   void reportDiagnostic(const ClangTidyError &Error) {
     const tooling::DiagnosticMessage &Message = Error.Message;
     SourceLocation Loc = getLocation(Message.FilePath, Message.FileOffset);
@@ -123,6 +143,9 @@ public:
     {
       auto Level = static_cast<DiagnosticsEngine::Level>(Error.DiagLevel);
       std::string Name = Error.DiagnosticName;
+
+      outputJson(Error,"function_signature.json");
+      
       if (!Error.EnabledDiagnosticAliases.empty())
         Name += "," + llvm::join(Error.EnabledDiagnosticAliases, ",");
       if (Error.IsWarningAsError) {

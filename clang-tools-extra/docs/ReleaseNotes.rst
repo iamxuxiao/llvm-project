@@ -104,6 +104,26 @@ New checks
 
   Warns when a struct or class uses const or reference (lvalue or rvalue) data members.
 
+- New :doc:`misc-function-signature
+  <clang-tidy/checks/misc/function-signature>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`misc-return-pointer
+  <clang-tidy/checks/misc/return-pointer>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`misc-xcheck-compound-match
+  <clang-tidy/checks/misc/xcheck-compound-match>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`misc-xcheck-return-pointer
+  <clang-tidy/checks/misc/xcheck-return-pointer>` check.
+
+  FIXME: add release notes.
+
 New check aliases
 ^^^^^^^^^^^^^^^^^
 

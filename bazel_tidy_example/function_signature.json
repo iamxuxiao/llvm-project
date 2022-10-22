@@ -137,3 +137,67 @@
 {"Signature":"[!]has if statement contains result_maybe_1. Matched Size=1 "}
 {"Signature":"matched compound stmt, var name [result_maybe_3]"}
 {"Signature":"[nullptr] has if statement contains result_maybe_3. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_1]"}
+{"Signature":"matched compound stmt, var name [result_maybe_2]"}
+{"Signature":"[!]has if statement contains result_maybe_2. Matched Size=1 "}
+{"Signature":"[!]has if statement contains result_maybe_1. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_3]"}
+{"Signature":"[nullptr] has if statement contains result_maybe_3. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_1]"}
+{"Signature":"matched compound stmt, var name [result_maybe_2]"}
+{"Signature":"[!]has if statement contains result_maybe_2. Matched Size=1 "}
+{"Signature":"[!]has if statement contains result_maybe_1. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_3]"}
+{"Signature":"[nullptr] has if statement contains result_maybe_3. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_1]"}
+{"Signature":"matched compound stmt, var name [result_maybe_2]"}
+{"Signature":"[!]has if statement contains result_maybe_2. Matched Size=1 "}
+{"Signature":"[!]has if statement contains result_maybe_1. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_3]"}
+{"Signature":"[nullptr] has if statement contains result_maybe_3. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_1]"}
+{"Signature":"matched compound stmt, var name [result_maybe_2]"}
+{"Signature":"[!]has if statement contains result_maybe_2. Matched Size=1 "}
+{"Signature":"[!]has if statement contains result_maybe_1. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_3]"}
+{"Signature":"[nullptr] has if statement contains result_maybe_3. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"[!]has if statement contains lane_ptr_maybe. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":"[!]has if statement contains another_lane_ptr_maybe. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_1]"}
+{"Signature":"matched compound stmt, var name [result_maybe_2]"}
+{"Signature":"[!]has if statement contains result_maybe_2. Matched Size=1 "}
+{"Signature":"[!]has if statement contains result_maybe_1. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_3]"}
+{"Signature":"[nullptr] has if statement contains result_maybe_3. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"[!]has if statement contains lane_ptr_maybe. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":"[!]has if statement contains another_lane_ptr_maybe. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"[!]has if statement contains lane_ptr_maybe. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":"[!]has if statement contains another_lane_ptr_maybe. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe]"}
+{"Signature":"[!]has if statement contains result_maybe. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [result_maybe_2]"}
+{"Signature":"[!]has if statement contains result_maybe_2. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"[!]has if statement contains lane_ptr_maybe. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":"[!]has if statement contains another_lane_ptr_maybe. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"[!]has if statement contains lane_ptr_maybe. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":"[!]has if statement contains another_lane_ptr_maybe. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"[!]has if statement contains lane_ptr_maybe. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":"[!]has if statement contains another_lane_ptr_maybe. Matched Size=1 "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
+{"Signature":" Missing null check for lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [lane_ptr_maybe]"}
+{"Signature":" Missing null check for another_lane_ptr_maybe "}
+{"Signature":"matched compound stmt, var name [another_lane_ptr_maybe]"}
